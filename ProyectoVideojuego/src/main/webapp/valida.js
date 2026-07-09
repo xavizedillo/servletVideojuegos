@@ -40,7 +40,6 @@ document.getElementById("formPersonaje").addEventListener("submit", function(eve
 
     const correo = document.getElementById("correo").value.trim();
     const regexCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    // CORRECCIÓN AQUÍ: Usar .test() para validar el texto contra la expresión regular
     if (!regexCorreo.test(correo)) {
         document.getElementById("errorCorreo").innerText = "El correo electrónico no es válido.";
         valid = false;
